@@ -1,0 +1,17 @@
+---
+title: "Group 38 UCSB domestic grad enrollment"
+author: "Katelyn Toigo and Ethan Hoffman"
+date: "11/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+```
+
+```{r}
+ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
+```
+
