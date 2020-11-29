@@ -19,6 +19,7 @@ ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
 #Create a basic ggplot2 column graph showing the change in domestic graduate enrollment from 2008 to 2019 with the fill color dependent on race/ethnicity.
 ggplot(data = ucsb_grad, aes(x = year_abbr, y = domestic_enrollment)) +
   geom_col(aes(fill = ethnicity), position = "fill") +
-  labs(x = "Year", y = "Domestic Enrollment")
+  labs(x = "Year", y = "Domestic Enrollment", title = "Domestic Graduate Enrollment from 2008 to 2019") +
+  theme_minimal()
 ```
 
